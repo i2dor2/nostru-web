@@ -5,11 +5,10 @@ compatibility_flags = ["nodejs_compat"]
 
 workers_dev = true
 
-# routes active after nostru.net zone is added to Cloudflare:
-# routes = [
-#   { pattern = "nostru.net/*", zone_name = "nostru.net" },
-#   { pattern = "www.nostru.net/*", zone_name = "nostru.net" },
-# ]
+routes = [
+  { pattern = "nostru.net/*", zone_name = "nostru.net" },
+  { pattern = "www.nostru.net/*", zone_name = "nostru.net" },
+]
 
 [[kv_namespaces]]
 binding = "NIP05"

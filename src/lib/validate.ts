@@ -1,8 +1,17 @@
 export const NAME_RESERVED = new Set([
+  // infrastructure & protocol
   'admin', 'administrator', 'api', 'check', 'claim', 'contact',
   'help', 'info', 'mail', 'me', 'nip05', 'nostru', 'nostr',
   'postmaster', 'root', 'security', 'support', 'system',
   'webmaster', 'well-known', 'www', '_', '__',
+  // additional infra endpoints
+  'health', 'status', 'cdn', 'static', 'assets', 'media', 'monitor', 'test', 'demo',
+  // team / brand
+  'i2dor', 'i2dor2', 'official', 'team', 'staff', 'dev', 'mod', 'moderator', 'bot',
+  // nostr protocol identifiers
+  'nip', 'nip352', 'relay', 'nsec', 'npub', 'nrelay', 'nevent', 'naddr', 'nprofile',
+  // anti-squatting
+  'satoshi', 'nakamoto', 'satoshinakamoto', 'bitcoin', 'btc',
 ]);
 
 const NAME_RE = /^[a-z0-9][a-z0-9_-]{0,28}[a-z0-9]$|^[a-z0-9]$/;

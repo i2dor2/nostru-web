@@ -5,7 +5,7 @@ describe('validateName', () => {
   it('accepts simple lowercase names', () => {
     expect(validateName('alice')).toBeNull();
     expect(validateName('bob123')).toBeNull();
-    expect(validateName('satoshi')).toBeNull();
+    expect(validateName('lightning')).toBeNull();
   });
 
   it('accepts names with hyphens and underscores mid-word', () => {

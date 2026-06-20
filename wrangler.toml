@@ -3,7 +3,15 @@ main = "src/index.ts"
 compatibility_date = "2026-06-20"
 compatibility_flags = ["nodejs_compat"]
 
+workers_dev = true
+
+# routes active after nostru.net zone is added to Cloudflare:
+# routes = [
+#   { pattern = "nostru.net/*", zone_name = "nostru.net" },
+#   { pattern = "www.nostru.net/*", zone_name = "nostru.net" },
+# ]
+
 [[kv_namespaces]]
 binding = "NIP05"
-id = "REPLACE_WITH_KV_NAMESPACE_ID"
-preview_id = "REPLACE_WITH_KV_PREVIEW_ID"
+id = "8e4b837c5141436ba013a341f41498ed"
+preview_id = "3f83a95b2a444c34b63966c497d5cadb"
